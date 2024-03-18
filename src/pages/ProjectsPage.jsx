@@ -2,11 +2,21 @@ import React from 'react';
 
 const projects = [
   // Replace these with your actual GitHub project data
-  { name: 'Project 1', description: 'This is project 1 description', html_url: 'https://github.com/yourusername/project1' },
-  { name: 'Project 2', description: 'This is project 2 description', html_url: 'https://github.com/yourusername/project2' },
-  { name: 'Project 3', description: 'This is project 3 description', html_url: 'https://github.com/yourusername/project3' },
-  { name: 'Project 4', description: 'This is project 4 description', html_url: 'https://github.com/yourusername/project4' },
-  { name: 'Project 5', description: 'This is project 5 description', html_url: 'https://github.com/yourusername/project5' },
+  { name: 'Swift Scheduler',
+   description: 'Capstone MERN-stack full-stack web app, building for small schools for teacher and student and class management.', 
+   html_url: 'https://github.com/e41c/Capstone-II---Group26' },
+  { name: 'Shopping List, and tax calculator', 
+  description: 'A true Cross-platform app, written in Flutter, working with IOS, Android, Web(browser), macos, windows. Also using googles FireBase database.', 
+  html_url: 'https://github.com/e41c/group33_shopping_list_app' },
+  { name: 'Meal Mate', 
+  description: 'Cross-platform mobile app, written in React-Native, that helps users find restaurants near by, and review ratings and comments.', 
+  html_url: 'https://github.com/e41c/mealMate' },
+  { name: 'Project 4', 
+  description: 'This is project 4 description', 
+  html_url: 'https://github.com/yourusername/project4' },
+  { name: 'Project 5', 
+  description: 'This is project 5 description', 
+  html_url: 'https://github.com/yourusername/project5' },
 ];
 
 const ProjectsPage = () => {
