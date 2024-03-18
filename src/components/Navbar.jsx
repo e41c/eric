@@ -5,16 +5,10 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Toggle for Navbar collapse
   const toggleNav = () => {
     setIsNavExpanded(!isNavExpanded);
-  };
-
-  // Toggle for dropdown
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
