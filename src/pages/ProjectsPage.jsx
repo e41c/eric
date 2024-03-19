@@ -1,7 +1,7 @@
+// react-portfoli/src/pages/ProjectPage.jsx
 import React from 'react';
 
 const projects = [
-  // Replace these with your actual GitHub project data
   { name: 'Swift Scheduler',
    description: 'Capstone MERN-stack full-stack web app, building for small schools for teacher and student and class management.', 
    html_url: 'https://github.com/e41c/Capstone-II---Group26' },
@@ -22,7 +22,7 @@ const projects = [
 const ProjectsPage = () => {
   return (
     <div className="container mt-4">
-      <h2>My Projects</h2>
+      <h2 className="mb-4 mt-5">My Projects</h2> {/* Adjusted margin to avoid cut-off */}
       <div className="row">
         {projects.map((project, index) => (
           <div key={index} className="col-md-4 mb-4">

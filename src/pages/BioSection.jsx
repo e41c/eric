@@ -1,19 +1,20 @@
-// react-portfolio/src/pages/BioSection.js
-
+// react-portfolio/src/pages/BioSection.jsx
 import React from 'react';
 
 const BioSection = () => {
   return (
-    <div className="container mt-4">
-      <div className="text-center">
-        <figure className="figure">
-          <img src="/cv/cv.jpg" className="figure-img img-fluid rounded" alt="Dev at work" />
-          <figcaption className="figure-caption">I like to code, camp, and cook!</figcaption>
-        </figure>
+    <div className="container mt-5"> {/* Adjusted top margin */}
+      <div className="row">
+        <div className="col-12 col-md-6 mx-auto text-center">
+          <figure className="figure">
+            <img src={process.env.PUBLIC_URL + "/images/cv_cartoon.jpg"} className="figure-img img-fluid rounded image-animate" alt="Dev at work" style={{ maxWidth: '300px' }} />
+            <figcaption className="figure-caption">I like to code, camp, and cook!</figcaption>
+          </figure>
+        </div>
       </div>
 
       <p className="lead">Eric: Programmer located in Toronto, Canada</p>
-      <h3><strong>About Me:</strong></h3>
+      <h3 className="mt-4"><strong>About Me:</strong></h3> {/* Adjusted top margin */}
       <hr />
       <ul className="list-group list-group-flush">
         <li className="list-group-item">Discovered my love for programming at George Brown College in Toronto, where I completed a comprehensive three-year program in Computer Programming and Analysis.</li>

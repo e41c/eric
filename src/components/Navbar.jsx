@@ -1,5 +1,4 @@
 // react-portfolio/src/components/Navbar.js
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark"> {/* Change navbar-light to navbar-dark, and bg-light to bg-dark */}
       <div className="container">
         <Link className="navbar-brand" to="/">Eric Grigor</Link>
         <button className="navbar-toggler" type="button" onClick={toggleNav} aria-controls="navbarNavDropdown" aria-expanded={isNavExpanded ? 'true' : 'false'} aria-label="Toggle navigation">
@@ -29,6 +28,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/projects">Projects</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/cover-letter">Cover Letter</Link>
+            </li>
             {/* Social Dropdown Here */}
           </ul>
         </div>
@@ -38,3 +40,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
