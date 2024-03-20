@@ -5,7 +5,7 @@ import React from 'react';
 const ResumePage = () => {
   return (
     <div className="container mt-4">
-      <h2 className="mb-4 mt-5">Resume</h2>
+      <h2 className="mb-4">Resume</h2>
 
       <div className="text-center mb-4">
         <img src={process.env.PUBLIC_URL + "/images/cv.jpg"} className="img-fluid rounded image-animate" alt="Dev at work" style={{ maxWidth: '300px' }} />

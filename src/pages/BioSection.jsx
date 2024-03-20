@@ -1,9 +1,23 @@
 // react-portfolio/src/pages/BioSection.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import './BioSection.css'; // Import CSS file for animations
 
 const BioSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once
+    threshold: 0.5 // Trigger animation when the component is 50% visible
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true); // Set isVisible to true when component is in view
+    }
+  }, [inView]);
+
   return (
-    <div className="container mt-5"> {/* Adjusted top margin */}
+    <div className={`container mt-4 ${isVisible ? 'fade-in' : ''}`} ref={ref}>
       <div className="row">
         <div className="col-12 col-md-6 mx-auto text-center">
           <figure className="figure">
@@ -14,7 +28,7 @@ const BioSection = () => {
       </div>
 
       <p className="lead">Eric: Programmer located in Toronto, Canada</p>
-      <h3 className="mt-4"><strong>About Me:</strong></h3> {/* Adjusted top margin */}
+      <h3><strong>About Me:</strong></h3>
       <hr />
       <ul className="list-group list-group-flush">
         <li className="list-group-item">Discovered my love for programming at George Brown College in Toronto, where I completed a comprehensive three-year program in Computer Programming and Analysis.</li>

@@ -1,0 +1,16 @@
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Slide in from top */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Optional: Slide in from top */
+    }
+  }
+  
