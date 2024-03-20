@@ -19,18 +19,20 @@ const Navbar = () => {
         </button>
         <div className={`collapse navbar-collapse ${isNavExpanded ? 'show' : ''}`} id="navbarNavDropdown">
           <ul className="navbar-nav">
+        
             <li className="nav-item">
               <Link className="nav-link" to="/resume">Resume</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/bio">Bio</Link>
+              <Link className="nav-link" to="/cover-letter">Cover Letter</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/projects">Projects</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/cover-letter">Cover Letter</Link>
+              <Link className="nav-link" to="/bio">About me</Link>
             </li>
+
             {/* Social Dropdown Here */}
           </ul>
         </div>
